@@ -1,12 +1,52 @@
-# React + Vite
+# 🌦️ Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive weather application built with **React.js** and **Tailwind CSS** that fetches real-time weather data using the **Fetch API**.  
+Users can search for any city/region to view current **temperature, weather conditions, and icons**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🌍 **Search by city/region** to get live weather updates.  
+- 🌡️ Displays **temperature, weather conditions, and icons**.  
+- 📱 **Responsive design** using Tailwind CSS for all screen sizes.  
+- ⚡ **Real-time data fetching** using the `fetch` API.  
+- ❌ Handles invalid inputs and API errors gracefully.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+- **React.js** – Frontend library  
+- **Tailwind CSS** – Styling  
+- **Fetch API** – External API integration  
+
+---
+
+## 📸 Screenshots
+(Add screenshots here once you have them, e.g. `/screenshots/home.png`)
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/shashank-787/react-weather-app.git
+   cd weather-app
+
+1. Install dependencies:
+   ```bash
+   npm install
+
+1. Create a .env file in the root directory and add your API key (from https://www.weatherapi.com/):
+   ```bash
+   VITE_WEATHER_API_KEY=your_api_key_here
+
+1. Start the development server:
+   ```bash
+   npm run dev
+
+---
+
+## 👨‍💻 Author
+
+Shashank Bankar – GitHub | LinkedIn
