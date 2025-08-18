@@ -13,21 +13,34 @@ function App() {
         weather.fetchCurrentUserLocation()
     }, [])
     return (
-        <>  
-            <div className='flex items-center justify-center box-border'>
-                <div className='w-120 flex flex-col items-center px-10 pt-6 pb-7 mt-20 rounded-lg bg-emerald-100 text-center'>
-                    <h1 className='text-4xl mb-4'>Weather App</h1>
-                    <div className='flex gap-3'>
-                        <Input/>
-                        <Button onClick={weather.fetchData} name={'Search'}/>    
+        <>
+            <div class="h-screen flex flex-col">
+                <nav className='h-16 bg-amber-100 items-center flex justify-around py-4'>
+                    {/* <h1>Weather App</h1> */}
+                    <div className='flex gap-3 items-center'>
+                        <Input />
+                        <Button onClick={weather.fetchData} name={'Search'} />
+                        {/* <Button onClick={weather.fetchData} name={'Refresh'}></Button> */}
                     </div>
-                    <Card/>
-                    <Button onClick={weather.fetchData} name={'Refresh'}></Button>
-                </div>    
+                    {/* <Button name={'Dark mode'} /> */}
+                </nav>
+
+                <div class="flex grow-1 flex-col sm:flex-row">
+                    <div class="bg-emerald-100 px-10 sm:w-80">
+                        <Card />
+                    </div>
+                    <div class="grid grow-1 grid-cols-1 gap-4 bg-gray-100 p-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <div class="rounded-lg bg-white p-6 shadow">Box 1</div>
+                        <div class="rounded-lg bg-white p-6 shadow">Box 2</div>
+                        <div class="rounded-lg bg-white p-6 shadow">Box 3</div>
+                        <div class="rounded-lg bg-white p-6 shadow">Box 4</div>
+                        <div class="rounded-lg bg-white p-6 shadow">Box 4</div>
+                        <div class="rounded-lg bg-white p-6 shadow">Box 5</div>
+                    </div>
+                </div>
             </div>
-            
-            
+
         </>
-    )   
+    )
 }
 export default App
